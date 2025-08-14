@@ -1,4 +1,3 @@
-import React from 'react';
 import { View, Text, StyleSheet,ScrollView } from 'react-native';
 
 
@@ -6,28 +5,28 @@ export default function CardCEP(props) {
   return (
     <ScrollView style={styles.card}>
       <View style={styles.item}>
-        <Text style={styles.label}>{props.Info01}</Text>
+        <Text style={styles.label}>{props.CEP}</Text>
         <Text style={styles.value}>{props.dados01}</Text>
       </View>
 
       <View style={styles.item}>
-        <Text style={styles.label}>{props.Info2}</Text>
+        <Text style={styles.label}>{props.Logradouro}</Text>
         <Text style={styles.value}>{props.Dados2}</Text>
       </View>
       <View style={styles.item}>
-        <Text style={styles.label}>{props.Info3}</Text>
+        <Text style={styles.label}>{props.Bairro}</Text>
         <Text style={styles.value}>{props.Dados3}</Text>
       </View>
       <View style={styles.item}>
-        <Text style={styles.label}>{props.Info4}</Text>
+        <Text style={styles.label}>{props.Localidade}</Text>
         <Text style={styles.value}>{props.Dados4}</Text>
       </View>
       <View style={styles.item}>
-        <Text style={styles.label}>{props.Info5}</Text>
+        <Text style={styles.label}>{props.UF}</Text>
         <Text style={styles.value}>{props.Dados5}</Text>
       </View>
       <View style={styles.item}>
-        <Text style={styles.label}>{props.Info6}</Text>
+        <Text style={styles.label}>{props.Regiao}</Text>
         <Text style={styles.value}>{props.Dados6}</Text>
       </View>
 
@@ -60,7 +59,7 @@ const styles = StyleSheet.create({
     marginTop:26,
   },
   label: {
-    fontWeight: 'bold',
+    fontWeight: 'Poppins-Bold',
     fontSize: 20,
     marginBottom: 4,
   },
